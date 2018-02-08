@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+
+{% block title %}
+    <title>Login Success</title>
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="container">
+
+
+<h1>স্বাগতম </h1>
+<p>লগিন সম্পন্য হয়েছে</p>
+<a class="btn btn-primary" href="{% url 'logout' %}">Log Out</a>
+{% endblock content %}
+    </div>

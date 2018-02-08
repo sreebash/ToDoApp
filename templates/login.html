@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+
+{% block title %}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+    <div class="container">
+
+    <h1>Login</h1>
+
+    <form class="form" action="/login/" method="post" id="login_form">
+        {% csrf_token %}
+    Username: <input type="text" name="username" size="50"><br>
+    Password: <input type="text" name="password" size="50">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+    </div>
+{% endblock %}
